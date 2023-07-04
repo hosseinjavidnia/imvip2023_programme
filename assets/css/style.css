@@ -3171,6 +3171,26 @@ mark {
   --cd-color-event-closing-h: 210;
   --cd-color-event-closing-s: 64%;
   --cd-color-event-closing-l: 31%;
+  --cd-color-event-ss1: hsl(301, 94%, 25%);
+  --cd-color-event-ss1-h: 301;
+  --cd-color-event-ss1-s: 94%;
+  --cd-color-event-ss1-l: 25%;
+  --cd-color-event-ss2: hsl(113, 68%, 42%);
+  --cd-color-event-ss2-h: 113;
+  --cd-color-event-ss2-s: 68%;
+  --cd-color-event-ss2-l: 42%;
+  --cd-color-event-ss3: hsl(160, 74%, 31%);
+  --cd-color-event-ss3-h: 160;
+  --cd-color-event-ss3-s: 74%;
+  --cd-color-event-ss3-l: 31%;
+  --cd-color-event-ss4: hsl(4, 94%, 25%);
+  --cd-color-event-ss4-h: 4;
+  --cd-color-event-ss4-s: 94%;
+  --cd-color-event-ss4-l: 25%;
+  --cd-color-event-reg: hsl(131, 53%, 38%);
+  --cd-color-event-reg-h: 131;
+  --cd-color-event-reg-s: 53%;
+  --cd-color-event-reg-l: 38%;
   --cd-color-text: hsl(0, 0%, 13%);
   --cd-color-text-h: 0;
   --cd-color-text-s: 0%;
@@ -3521,6 +3541,31 @@ a {
 .cd-schedule-modal[data-event="event-closing"] .cd-schedule-modal__header-bg {
   background: hsl(31, 89%, 68%);
   background: var(--cd-color-event-closing);
+}
+.cd-schedule__event [data-event="event-ss1"],
+.cd-schedule-modal[data-event="event-ss1"] .cd-schedule-modal__header-bg {
+  background: hsl(301, 94%, 25%);
+  background: var(--cd-color-event-ss1);
+}
+.cd-schedule__event [data-event="event-ss2"],
+.cd-schedule-modal[data-event="event-ss2"] .cd-schedule-modal__header-bg {
+  background: hsl(0, 94%, 25%);
+  background: var(--cd-color-event-ss2);
+}
+.cd-schedule__event [data-event="event-ss3"],
+.cd-schedule-modal[data-event="event-ss3"] .cd-schedule-modal__header-bg {
+  background: hsl(0, 61%, 46%);
+  background: var(--cd-color-event-ss3);
+}
+.cd-schedule__event [data-event="event-ss4"],
+.cd-schedule-modal[data-event="event-ss4"] .cd-schedule-modal__header-bg {
+  background: hsl(207, 53%, 38%);
+  background: var(--cd-color-event-ss4);
+}
+.cd-schedule__event [data-event="event-reg"],
+.cd-schedule-modal[data-event="event-reg"] .cd-schedule-modal__header-bg {
+  background: hsl(131, 53%, 38%);
+  background: var(--cd-color-event-reg);
 }
 .cd-schedule-modal {
   position: fixed;
