@@ -3131,66 +3131,23 @@ mark {
   font-size: var(--text-sm);
 }
 :root {
-  --cd-color-event-opening: hsl(210, 64%, 31%);
-  --cd-color-event-opening-h: 210;
-  --cd-color-event-opening-s: 64%;
-  --cd-color-event-opening-l: 31%;
-  --cd-color-event-keynote: hsl(6, 56%, 43%);
-  --cd-color-event-keynote-h: 6;
-  --cd-color-event-keynote-s: 56%;
-  --cd-color-event-keynote-l: 43%;
-  --cd-color-event-oral1: hsl(54, 100%, 26%);
-  --cd-color-event-oral1-h: 54;
-  --cd-color-event-oral1-s: 100%;
-  --cd-color-event-oral1-l: 26%;
-  --cd-color-event-oral2: hsl(192, 65%, 38%);
-  --cd-color-event-oral2-h: 192;
-  --cd-color-event-oral2-s: 65%;
-  --cd-color-event-oral2-l: 38%;
-  --cd-color-event-oral3: hsl(39, 94%, 21%);
-  --cd-color-event-oral3-h: 39;
-  --cd-color-event-oral3-s: 94%;
-  --cd-color-event-oral3-l: 21%;
-  --cd-color-event-oral4: hsl(244, 65%, 60%);
-  --cd-color-event-oral4-h: 244;
-  --cd-color-event-oral4-s: 65%;
-  --cd-color-event-oral4-l: 60%;
-  --cd-color-event-oral5: hsl(339, 36%, 44%);
-  --cd-color-event-oral5-h: 339;
-  --cd-color-event-oral5-s: 36%;
-  --cd-color-event-oral5-l: 44%;
-  --cd-color-event-oral6: hsl(145, 31%, 55%);
-  --cd-color-event-oral6-h: 145;
-  --cd-color-event-oral6-s: 31%;
-  --cd-color-event-oral6-l: 55%;
-  --cd-color-event-lunch: hsl(33, 88%, 41%);
-  --cd-color-event-lunch-h: 33;
-  --cd-color-event-lunch-s: 88%;
-  --cd-color-event-lunch-l: 41%;
-  --cd-color-event-closing: hsl(210, 64%, 31%);
-  --cd-color-event-closing-h: 210;
-  --cd-color-event-closing-s: 64%;
-  --cd-color-event-closing-l: 31%;
-  --cd-color-event-ss1: hsl(301, 94%, 25%);
-  --cd-color-event-ss1-h: 301;
-  --cd-color-event-ss1-s: 94%;
-  --cd-color-event-ss1-l: 25%;
-  --cd-color-event-ss2: hsl(113, 68%, 42%);
-  --cd-color-event-ss2-h: 113;
-  --cd-color-event-ss2-s: 68%;
-  --cd-color-event-ss2-l: 42%;
-  --cd-color-event-ss3: hsl(160, 74%, 31%);
-  --cd-color-event-ss3-h: 160;
-  --cd-color-event-ss3-s: 74%;
-  --cd-color-event-ss3-l: 31%;
-  --cd-color-event-ss4: hsl(4, 94%, 25%);
-  --cd-color-event-ss4-h: 4;
-  --cd-color-event-ss4-s: 94%;
-  --cd-color-event-ss4-l: 25%;
-  --cd-color-event-reg: hsl(131, 53%, 38%);
-  --cd-color-event-reg-h: 131;
-  --cd-color-event-reg-s: 53%;
-  --cd-color-event-reg-l: 38%;
+  --cd-color-event-opening: hsl(25, 49%, 48%);
+  --cd-color-event-keynote: hsl(262, 48%, 58%);
+  --cd-color-event-oral1: hsl(145, 70%, 35%);
+  --cd-color-event-oral2: hsl(11, 100%, 34%);
+  --cd-color-event-oral3: hsl(265, 70%, 35%);
+  --cd-color-event-oral4: hsl(325, 70%, 35%);
+  --cd-color-event-oral5: hsl(25, 80%, 40%);
+  --cd-color-event-oral6: hsl(85, 80%, 40%);
+  --cd-color-event-oral7: hsl(145, 80%, 40%);
+  --cd-color-event-lunch: hsl(205, 80%, 40%);
+  --cd-color-event-closing: hsl(25, 49%, 48%);
+  --cd-color-event-ss1: hsl(200, 21%, 39%);
+  --cd-color-event-ss2: hsl(25, 70%, 30%);
+  --cd-color-event-ss3: hsl(85, 70%, 30%);
+  --cd-color-event-ss4: hsl(352, 69%, 26%);
+  --cd-color-event-reg: hsl(205, 70%, 30%);
+  --cd-color-event-awards: hsl(265, 70%, 30%);
   --cd-color-text: hsl(0, 0%, 13%);
   --cd-color-text-h: 0;
   --cd-color-text-s: 0%;
@@ -3532,6 +3489,11 @@ a {
   background: hsl(31, 89%, 68%);
   background: var(--cd-color-event-oral6);
 }
+.cd-schedule__event [data-event="event-oral7"],
+.cd-schedule-modal[data-event="event-oral7"] .cd-schedule-modal__header-bg {
+  background: hsl(223, 31%, 55%);
+  background: var(--cd-color-event-oral7);
+}
 .cd-schedule__event [data-event="event-lunch"],
 .cd-schedule-modal[data-event="event-lunch"] .cd-schedule-modal__header-bg {
   background: hsl(31, 89%, 68%);
@@ -3566,6 +3528,11 @@ a {
 .cd-schedule-modal[data-event="event-reg"] .cd-schedule-modal__header-bg {
   background: hsl(131, 53%, 38%);
   background: var(--cd-color-event-reg);
+}
+.cd-schedule__event [data-event="event-awards"],
+.cd-schedule-modal[data-event="event-awards"] .cd-schedule-modal__header-bg {
+  background: hsl(67, 97%, 54%);
+  background: var(--cd-color-event-awards);
 }
 .cd-schedule-modal {
   position: fixed;
@@ -3848,4 +3815,35 @@ a {
 }
 .cd-article-link:hover {
   opacity: 0.8;
+}
+.legend-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 15px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 17px;
+  transition: color 0.3s;
+}
+
+.color-block {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s, border-radius 0.3s;
+}
+
+.legend-item:hover {
+  color: #007BFF;
+}
+
+.legend-item:hover .color-block {
+  transform: scale(1.5);
+  border-radius: 0;
 }
